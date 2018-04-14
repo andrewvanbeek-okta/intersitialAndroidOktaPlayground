@@ -16,12 +16,12 @@
     <eat-comment/>
 
     <bool name="google_enabled">true</bool>
-    <string name="google_client_id" translatable="false">533526602309-6g5u7a7gk5gaevtei81mt8c5aokbeklv.apps.googleusercontent.com</string>
+    <string name="google_client_id" translatable="false">0oa6owsznpXjpQ3My1t7</string>
     <!--
     NOTE: this "special" scheme, which is the reverse form of the client ID registered above, is
     permitted automatically by Google for client IDs registered with the "Android" type.
     -->
-    <string name="google_auth_redirect_uri" translatable="false">com.googleusercontent.apps.533526602309-6g5u7a7gk5gaevtei81mt8c5aokbeklv:/oauth2redirect</string>
+    <string name="google_auth_redirect_uri" translatable="false">com.okta.vanbeektech:/oauth2redirect</string>
 
     <bool name="facebook_enabled" translatable="false">true</bool>
     <string name="facebook_client_id" translatable="false">1493898367579297</string>

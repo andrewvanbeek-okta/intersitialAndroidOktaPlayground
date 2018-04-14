@@ -36,6 +36,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -150,6 +152,9 @@ public class TokenActivity extends AppCompatActivity {
         showSnackbar((tokenResponse != null)
                 ? R.string.exchange_complete
                 : R.string.refresh_failed);
+                        CookieSyncManager.createInstance(this);
+                CookieManager cookieManager = CookieManager.getInstance();
+                cookieManager.removeAllCookie();
         refreshUi();
     }
 

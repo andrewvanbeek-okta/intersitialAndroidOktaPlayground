@@ -7,7 +7,7 @@
     <eat-comment/>
 
     <string name="google_name">Google</string>
-    <string name="google_discovery_uri" translatable="false">https://accounts.google.com/.well-known/openid-configuration</string>
+    <string name="google_discovery_uri" translatable="false">https://vanbeektech.okta.com/.well-known/openid-configuration</string>
     <string name="google_scope_string" translatable="false">openid profile email</string>
 
     <string name="facebook_name">Facebook</string>

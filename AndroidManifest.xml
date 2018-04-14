@@ -12,6 +12,7 @@
  * limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="net.openid.appauthdemo.moreidps"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -42,7 +43,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="net.openid.appauth.demo"/>
-                <data android:scheme="com.googleusercontent.apps.533526602309-6g5u7a7gk5gaevtei81mt8c5aokbeklv"/>
+                <data android:scheme="com.okta.vanbeektech"/>
             </intent-filter>
 
             <!--
@@ -59,7 +60,8 @@
                 <data
                     android:scheme="https"
                     android:host="appauth.demo-app.io"
-                    android:path="/oauth2redirect" />
+                    android:path="/oauth2redirect"
+                    tools:ignore="AppLinkUrlError"/>
             </intent-filter>
         </activity>
 

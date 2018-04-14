@@ -5,7 +5,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-rc2'
+        classpath 'com.android.tools.build:gradle:3.0.1'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
     }
 }
@@ -31,7 +31,8 @@ dependencies {
 android {
     defaultConfig {
         manifestPlaceholders = [
-                'appAuthRedirectScheme': 'com.googleusercontent.apps.533526602309-6g5u7a7gk5gaevtei81mt8c5aokbeklv'
+                'appAuthRedirectScheme': 'com.okta.vanbeektech'
+
         ]
     }
 
