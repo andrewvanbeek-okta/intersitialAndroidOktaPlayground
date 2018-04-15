@@ -38,12 +38,12 @@
                 the browser used for authentication cannot directly invoke this app. The source for the redirect
                 page can be found in web/oauth2redirect.html
             -->
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="net.openid.appauth.demo"/>
-                <data android:scheme="com.okta.vanbeektech"/>
+
             </intent-filter>
 
             <!--
@@ -60,9 +60,24 @@
                 <data
                     android:scheme="https"
                     android:host="appauth.demo-app.io"
-                    android:path="/oauth2redirect"
+                    android:path="//oauth2redirect"
                     tools:ignore="AppLinkUrlError"/>
             </intent-filter>
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <category android:name="android.intent.category.BROWSABLE"></category>
+
+                <data
+                    android:host="www.my.app.com"
+                    android:path="launch"
+                    android:scheme="http"></data>
+            </intent-filter>
+
+
         </activity>
 
         <!-- Main activity -->
