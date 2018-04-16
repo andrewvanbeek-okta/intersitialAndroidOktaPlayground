@@ -44,14 +44,14 @@ class IdentityProvider {
 
 
 
-    public static final IdentityProvider GOOGLE = new IdentityProvider(
+    public static final IdentityProvider OKTA = new IdentityProvider(
             "Okta",
             R.bool.okta_enabled,
             R.string.okta_discovery_uri,
             NOT_SPECIFIED, // auth endpoint is discovered
             NOT_SPECIFIED, // token endpoint is discovered
             R.string.okta_client_id,
-            NOT_SPECIFIED, // client secret is not required for Google
+            NOT_SPECIFIED, // do not put Client Secret for Okta
             R.string.okta_auth_redirect_uri,
             R.string.okta_scope_string,
             R.drawable.btn_okta,
@@ -59,7 +59,7 @@ class IdentityProvider {
 
 
 
-    public static final List<IdentityProvider> PROVIDERS = Arrays.asList(GOOGLE);
+    public static final List<IdentityProvider> PROVIDERS = Arrays.asList(OKTA);
 
     public static List<IdentityProvider> getEnabledProviders(Context context) {
         ArrayList<IdentityProvider> providers = new ArrayList<>();
