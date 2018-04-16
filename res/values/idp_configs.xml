@@ -15,23 +15,12 @@
     -->
     <eat-comment/>
 
-    <bool name="google_enabled">true</bool>
-    <string name="google_client_id" translatable="false">0oa6owsznpXjpQ3My1t7</string>
+    <bool name="okta_enabled">true</bool>
+    <string name="okta_client_id" translatable="false">0oa6owsznpXjpQ3My1t7</string>
     <!--
     NOTE: this "special" scheme, which is the reverse form of the client ID registered above, is
     permitted automatically by Google for client IDs registered with the "Android" type.
     -->
-    <string name="google_auth_redirect_uri" translatable="false">https://dry-brook-55077.herokuapp.com/oauth2redirect</string>
+    <string name="okta_auth_redirect_uri" translatable="false">https://dry-brook-55077.herokuapp.com/oauth2redirect</string>
 
-    <bool name="facebook_enabled" translatable="false">true</bool>
-    <string name="facebook_client_id" translatable="false">1493898367579297</string>
-    <string name="facebook_client_secret" translatable="false">c29fdd53c851356337d1bcc3139b5e27</string>
-
-    <bool name="microsoft_enabled">true</bool>
-    <string name="microsoft_client_id">fb7f3460-68b6-48f9-a272-71e1ebf39cd2</string>
-    <string name="microsoft_client_secret" translatable="false">tJA4kMt79nbXHiJ8DUywQvV</string>
-
-    <bool name="github_enabled" translatable="false">true</bool>
-    <string name="github_client_id">30890f8e4ae2a189c94f</string>
-    <string name="github_client_secret" translatable="false">02f23ebb9de764cbbfda9aeb8c0ebfdece534cf8</string>
 </resources>

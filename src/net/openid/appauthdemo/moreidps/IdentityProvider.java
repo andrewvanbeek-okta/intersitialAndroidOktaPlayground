@@ -40,63 +40,26 @@ class IdentityProvider {
      */
     public static final int NOT_SPECIFIED = -1;
 
-    public static final IdentityProvider FACEBOOK = new IdentityProvider(
-            "Facebook",
-            R.bool.facebook_enabled,
-            NOT_SPECIFIED, // facebook does not have an OpenID Connect discovery endpoint
-            R.string.facebook_auth_endpoint,
-            R.string.facebook_token_endpoint,
-            R.string.facebook_client_id,
-            R.string.facebook_client_secret,
-            R.string.facebook_auth_redirect_uri,
-            R.string.facebook_scope_string,
-            R.drawable.btn_facebook,
-            R.string.facebook_name);
 
-    public static final IdentityProvider GITHUB = new IdentityProvider(
-            "GitHub",
-            R.bool.github_enabled,
-            NOT_SPECIFIED, // github does not have an OpenID Connect discovery endpoint
-            R.string.github_auth_endpoint,
-            R.string.github_token_endpoint,
-            R.string.github_client_id,
-            R.string.github_client_secret,
-            R.string.github_auth_redirect_uri,
-            R.string.github_scope_string,
-            R.drawable.btn_github,
-            R.string.github_name);
+
+
 
     public static final IdentityProvider GOOGLE = new IdentityProvider(
-            "Google",
-            R.bool.google_enabled,
-            R.string.google_discovery_uri,
+            "Okta",
+            R.bool.okta_enabled,
+            R.string.okta_discovery_uri,
             NOT_SPECIFIED, // auth endpoint is discovered
             NOT_SPECIFIED, // token endpoint is discovered
-            R.string.google_client_id,
+            R.string.okta_client_id,
             NOT_SPECIFIED, // client secret is not required for Google
-            R.string.google_auth_redirect_uri,
-            R.string.google_scope_string,
-            R.drawable.btn_google,
-            R.string.google_name);
+            R.string.okta_auth_redirect_uri,
+            R.string.okta_scope_string,
+            R.drawable.btn_okta,
+            R.string.okta_name);
 
-    public static final IdentityProvider MICROSOFT = new IdentityProvider(
-            "Microsoft",
-            R.bool.microsoft_enabled,
-            R.string.microsoft_discovery_uri,
-            NOT_SPECIFIED,
-            NOT_SPECIFIED,
-            R.string.microsoft_client_id,
-            R.string.microsoft_client_secret,
-            R.string.microsoft_auth_redirect_uri,
-            R.string.microsoft_scope_string,
-            R.drawable.btn_microsoft,
-            R.string.microsoft_name);
 
-    public static final List<IdentityProvider> PROVIDERS = Arrays.asList(
-            FACEBOOK,
-            GITHUB,
-            GOOGLE,
-            MICROSOFT);
+
+    public static final List<IdentityProvider> PROVIDERS = Arrays.asList(GOOGLE);
 
     public static List<IdentityProvider> getEnabledProviders(Context context) {
         ArrayList<IdentityProvider> providers = new ArrayList<>();
