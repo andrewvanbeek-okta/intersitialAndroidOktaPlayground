@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 ResponseTypeValues.CODE,
                 idp.getRedirectUri())
                 .setScope(idp.getScope())
+                .setPrompt("consent")
                 .build();
 
         Log.d(TAG, "Making auth request to " + idp.name);

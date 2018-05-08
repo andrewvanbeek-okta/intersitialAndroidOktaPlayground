@@ -4,7 +4,7 @@
     <eat-comment/>
 
     <string name="okta_name">Google</string>
-    <string name="okta_discovery_uri" translatable="false">https://vanbeektech.okta.com/.well-known/openid-configuration</string>
-    <string name="okta_scope_string" translatable="false">openid profile email</string>
+    <string name="okta_discovery_uri" translatable="false">https://vanbeektech.okta.com/oauth2/aus6owvltqWJyEV0j1t7/.well-known/openid-configuration?client_id=0oa6owsznpXjpQ3My1t7</string>
+    <string name="okta_scope_string" translatable="false">consent openid profile email</string>
 
 </resources>

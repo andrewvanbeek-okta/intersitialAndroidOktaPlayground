@@ -21,6 +21,6 @@
     NOTE: this "special" scheme, which is the reverse form of the client ID registered above, is
     permitted automatically by Google for client IDs registered with the "Android" type.
     -->
-    <string name="okta_auth_redirect_uri" translatable="false">https://dry-brook-55077.herokuapp.com/oauth2redirect</string>
+    <string name="okta_auth_redirect_uri" translatable="false">com.okta.vanbeektech:/callback</string>
 
 </resources>
